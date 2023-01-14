@@ -1,0 +1,79 @@
+
+
+#Card-Img {
+  transform: scaleX(-1);
+}
+
+
+.background-Game {
+  margin-left: 6px;
+  margin-top: 2px;
+}
+
+.ditto {
+  width: 108px;
+  height: 87px;
+  left: 7.15rem;
+  top: 2.82rem;
+}
+
+.rotate {
+  transform: rotate(225deg);
+}
+
+#btn {
+  bottom: 0;
+  
+}
+
+.start-text {
+  animation: bling 2s infinite alternate;
+}
+
+.start-text:hover {
+  transition: color;
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+@keyframes bling {
+  0%{
+    transform: scale(1) ;
+  }
+  50%{
+    transform: scale(1.1) ;
+  }
+  100%{
+    transform: scale(1) ;
+  }
+
+}
+
+/* gradient border */
+
+.container {
+  margin: auto;
+  width: 40vw;
+  height: 40vh;
+  border: 4px solid transparent;
+  border-radius: 1px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+* transition img 
+ */
+
+ .before-lazyLoading {
+  opacity: 0;
+  scale: 0.9;
+  transition: opacity ease-in-out 0.45s , scale ease-in-out 0.45s;
+}
+.img-lazyTransition {
+  opacity: 1;
+  scale: 1;
+}
