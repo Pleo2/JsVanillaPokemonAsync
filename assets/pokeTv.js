@@ -16,7 +16,6 @@ const RUTA_URL_IMG = "https://image.tmdb.org/t/p/w500/";
 const RUTA_URL_IMG_ORIGINAL_QUALITY = "https://image.tmdb.org/t/p/original/";
 
 // -------------------------------------------------------------------------//
-
 const URL_API_SEARCH = (page) =>
   URL_API_TMDB + RUTA_SEARCH + API_KEY_TMDB + QUERY_SEARCH + LANGUAGE_SEARCH + PAGE_SEARCH(page);
 const URL_API_MOVIE_DETAILS = (id) =>
@@ -42,9 +41,8 @@ const getDataTmdb = async (urlApi) => {
 const showMoviesAll = async (page1, page2, page3) => {
   const result1 = await getDataTmdb(URL_API_SEARCH(page1));
   const result2 = await getDataTmdb(URL_API_SEARCH(page2));
-  const result3 = await getDataTmdb(URL_API_SEARCH(page3));
 
-  const allResult = [result1.results, result2.results, result3.results].flat();
+  const allResult = [result1.results, result2.results].flat();
   const filterArr = filterDuplicateObj(allResult);
   const sortAllResult = sortMoviesScore(filterArr)
   const bestMovies = filterMoviesWithError(sortAllResult);

@@ -47,14 +47,17 @@ const getCache = () => {
 };
 
 const showBtn = () => {
-  const btnStart = null || document.getElementById("start-button");
-  const loadingSpinner = null || document.getElementById("loading-spinner");  
-  if(localStorage.data) {
-    btnStart.classList.remove("hidden");
-    loadingSpinner.classList.add("hidden")
-    return 
+  if( window.location.pathname === '/src/generator-cards.html'){
+    const btnStart = null || document.getElementById("start-button");
+    const loadingSpinner = null || document.getElementById("loading-spinner");  
+    if(localStorage.data) {
+      btnStart.classList.remove("hidden");
+      loadingSpinner.classList.add("hidden")
+      return 
+    }
+    return
   }
-  return
+  return 
 }
 
 getCache();
