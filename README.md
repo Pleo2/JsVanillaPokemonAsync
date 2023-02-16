@@ -4,7 +4,7 @@ Son diferentes implementaciones de diferentes APIs utilizando JavaScript vanilla
 
 ## **Estado actual del proyecto**
 
-Proyecto en produccion. Url del proyecto: [https://pleo2.github.io/JsVanillaPokemonAsync/index.html](https://pokemon-async.github.com).
+Proyecto en produccion. Url del proyecto: [https://pleo2.github.io/JsVanillaPokemonAsync/index.html](https://pleo2.github.io/JsVanillaPokemonAsync/).
 
 ### **Requisitos de versionamiento git en los branch**
 
