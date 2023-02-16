@@ -47,7 +47,7 @@ const getCache = () => {
 };
 
 const showBtn = () => {
-  if( window.location.pathname === '/src/generator-cards.html' || window.location.pathname === '/src/generator-cards.html' ){
+  if( window.location.pathname === '/src/generator-cards.html' || window.location.pathname === '/JsVanillaPokemonAsync/generator-cards.html' ){
     const btnStart = null || document.getElementById("start-button");
     const loadingSpinner = null || document.getElementById("loading-spinner");  
     if(localStorage.data) {
